@@ -1,0 +1,12 @@
+[package]
+name = "qt-calculator-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cxx = "1.0"
+cxx-qt = "0.9"
+cxx-qt-lib = { version = "0.9", features = ["qt_full"] }
+
+[build-dependencies]
+cxx-qt-build = { version = "0.9", features = ["link_qt_object_files"] }
